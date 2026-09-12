@@ -23,7 +23,7 @@ function App() {
     "Tools",
   ];
 
-  // Load technology data from JSON
+ 
   useEffect(() => {
     fetch("/technologies.json")
       .then((response) => {
@@ -44,7 +44,7 @@ function App() {
       });
   }, []);
 
-  // Add technology to stack
+  
   const addToStack = (technology) => {
     const alreadyAdded = stack.some(
       (item) => item.id === technology.id
@@ -65,7 +65,7 @@ function App() {
     );
   };
 
-  // Remove single technology
+  
   const removeFromStack = (id) => {
     const removedItem = stack.find(
       (item) => item.id === id
@@ -82,7 +82,7 @@ function App() {
     }
   };
 
-  // Remove all technologies
+  
   const removeAll = () => {
     if (stack.length === 0) {
       toast.info("Your stack is already empty");
@@ -93,7 +93,7 @@ function App() {
     toast.info("All technologies removed");
   };
 
-  // Filter technologies
+  
   const filteredTechnologies =
     selectedCategory === "All"
       ? technologies
@@ -104,21 +104,21 @@ function App() {
 
   return (
     <div className="min-h-screen bg-white text-gray-900">
-      {/* Navbar */}
+     
       <Navbar />
 
       <main>
-        {/* Hero */}
+       
         <Hero />
 
-        {/* Technologies Section */}
+       
         <section
           id="technologies"
           className="border-t border-gray-100 bg-gray-50/60 py-20 sm:py-24"
         >
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
-            {/* Section Heading */}
+           
             <div className="mx-auto max-w-2xl text-center">
               <span className="inline-flex rounded-full bg-orange-50 px-4 py-1.5 text-xs font-extrabold tracking-widest text-orange-500">
                 TECHNOLOGIES
@@ -137,7 +137,7 @@ function App() {
               </p>
             </div>
 
-            {/* Category Filter */}
+            
             <div className="mt-10 flex flex-wrap justify-center gap-2">
               {categories.map((category) => {
                 const isActive =
@@ -161,10 +161,10 @@ function App() {
               })}
             </div>
 
-            {/* Main Technology Area */}
+            
             <div className="mt-12 grid items-start gap-8 lg:grid-cols-[minmax(0,1fr)_320px]">
 
-              {/* Technology Cards */}
+              
               <div>
                 {loading ? (
                   <div className="grid min-h-[350px] place-items-center rounded-2xl border border-gray-200 bg-white">
@@ -185,8 +185,7 @@ function App() {
                     </h3>
 
                     <p className="mt-2 text-sm text-gray-400">
-                      এই category-তে কোনো technology
-                      পাওয়া যায়নি।
+                      No technology was found in this category.
                     </p>
                   </div>
                 ) : (
@@ -208,7 +207,7 @@ function App() {
                 )}
               </div>
 
-              {/* Your Stack Sidebar */}
+            
               <StackSidebar
                 stack={stack}
                 onRemove={removeFromStack}
@@ -218,7 +217,7 @@ function App() {
           </div>
         </section>
 
-        {/* About Section */}
+        
         <section
           id="about"
           className="bg-white py-20 sm:py-24"
@@ -260,10 +259,10 @@ function App() {
         </section>
       </main>
 
-      {/* Footer */}
+     
       <Footer />
 
-      {/* Toast Notifications */}
+     
       <ToastContainer
         position="top-right"
         autoClose={2500}

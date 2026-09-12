@@ -2,7 +2,7 @@ function TechnologyCard({ technology, onAdd, isAdded }) {
   return (
     <article className="group rounded-2xl border border-gray-200 bg-white p-5 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-gray-300 hover:shadow-xl">
       
-      {/* Top */}
+     
       <div className="mb-5 flex items-start justify-between">
         <div className="grid h-14 w-14 place-items-center rounded-2xl bg-gray-50 p-3 transition group-hover:bg-orange-50">
           <img
@@ -17,17 +17,17 @@ function TechnologyCard({ technology, onAdd, isAdded }) {
         </span>
       </div>
 
-      {/* Name */}
+      
       <h3 className="text-xl font-extrabold tracking-tight text-gray-900">
         {technology.name}
       </h3>
 
-      {/* Description */}
+     
       <p className="mt-2 min-h-[60px] text-sm leading-6 text-gray-500">
         {technology.description}
       </p>
 
-      {/* Category + Difficulty */}
+     
       <div className="mt-5 flex items-center justify-between">
         <span className="rounded-lg bg-purple-50 px-3 py-1.5 text-[10px] font-bold text-purple-600">
           {technology.category}
@@ -38,7 +38,7 @@ function TechnologyCard({ technology, onAdd, isAdded }) {
         </span>
       </div>
 
-      {/* Bottom */}
+     
       <div className="mt-5 flex items-center justify-between gap-3 border-t border-gray-100 pt-4">
         
         {/* Rating */}
@@ -47,7 +47,7 @@ function TechnologyCard({ technology, onAdd, isAdded }) {
           {technology.rating}
         </div>
 
-        {/* Add Button */}
+        
         <button
           onClick={() => onAdd(technology)}
           disabled={isAdded}

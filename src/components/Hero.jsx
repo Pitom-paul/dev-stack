@@ -6,7 +6,7 @@ function Hero() {
       <div className="mx-auto max-w-7xl px-5 py-20 sm:px-8 lg:px-10 lg:py-28">
         <div className="grid items-center gap-12 lg:grid-cols-2">
 
-          {/* LEFT SIDE */}
+          
           <div>
             <h1 className="text-5xl font-black leading-[1.05] tracking-[-2px] text-gray-900 sm:text-6xl lg:text-[68px]">
               Build Your Ideal
@@ -22,10 +22,10 @@ function Hero() {
               your next project.
             </p>
 
-            {/* BUTTONS */}
+            
             <div className="mt-9 flex items-center gap-5">
 
-              {/* Explore Technologies Button */}
+              
               <a
                 href="#technologies"
                 className="rounded-xl bg-gradient-to-r from-orange-500 via-pink-500 to-purple-600 px-6 py-3.5 text-sm font-bold text-white shadow-lg shadow-pink-100 transition duration-300 hover:-translate-y-1 hover:shadow-xl"
@@ -33,7 +33,7 @@ function Hero() {
                 Explore Technologies
               </a>
 
-              {/* Learn More */}
+             
               <a
                 href="#about"
                 className="rounded-xl px-4 py-3.5 text-sm font-bold text-gray-700 transition hover:text-pink-600"
@@ -44,10 +44,10 @@ function Hero() {
             </div>
           </div>
 
-          {/* RIGHT SIDE IMAGE */}
+          
           <div className="relative flex items-center justify-center">
 
-            {/* Orange decorative dots */}
+            
             <div className="absolute right-5 top-5 grid grid-cols-5 gap-2 opacity-60">
               {[...Array(20)].map((_, index) => (
                 <span
@@ -57,10 +57,10 @@ function Hero() {
               ))}
             </div>
 
-            {/* Background glow */}
+            
             <div className="absolute h-72 w-72 rounded-full bg-pink-100 opacity-40 blur-3xl"></div>
 
-            {/* Banner Image */}
+            
             <img
               src={bannerStack}
               alt="Development Stack"

@@ -16,7 +16,7 @@ function Navbar() {
     <header className="sticky top-0 z-50 bg-white">
       <div className="mx-auto flex h-[76px] max-w-7xl items-center justify-between px-5 sm:px-8 lg:px-10">
 
-        {/* Mobile Menu */}
+        
         <button
           onClick={() => setMenuOpen(!menuOpen)}
           className="grid h-10 w-10 place-items-center rounded-lg border border-gray-200 text-lg text-gray-700 lg:hidden"
@@ -25,7 +25,7 @@ function Navbar() {
           ☰
         </button>
 
-        {/* Logo */}
+        
         <a href="#" className="flex items-center">
           <img
             src={logoText}
@@ -34,7 +34,7 @@ function Navbar() {
           />
         </a>
 
-        {/* Navigation */}
+        
         <nav className="hidden items-center gap-8 lg:flex">
           {links.map((link, index) => (
             <a
@@ -51,7 +51,7 @@ function Navbar() {
           ))}
         </nav>
 
-        {/* Right Side */}
+       
         <div className="flex items-center gap-5">
           <button className="text-[15px] font-medium text-gray-700 transition hover:text-pink-500">
             Sign In
@@ -63,7 +63,7 @@ function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Navigation */}
+      
       {menuOpen && (
         <div className="border-t border-gray-100 bg-white px-5 py-4 lg:hidden">
           <nav className="flex flex-col gap-1">

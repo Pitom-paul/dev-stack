@@ -5,10 +5,10 @@ function Footer() {
     <footer className="border-t border-gray-100 bg-white">
       <div className="mx-auto max-w-7xl px-6 py-14 sm:px-8 lg:px-10">
 
-        {/* Main Footer */}
+        
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
 
-          {/* Brand */}
+          
           <div className="lg:col-span-1">
             <a href="#" className="inline-flex items-center">
               <img
@@ -23,7 +23,7 @@ function Footer() {
               building modern software.
             </p>
 
-            {/* Social Links */}
+            
             <div className="mt-7 flex items-center gap-5">
               <a
                 href="https://github.com"
@@ -54,7 +54,7 @@ function Footer() {
             </div>
           </div>
 
-          {/* Product */}
+          
           <div>
             <h3 className="text-sm font-bold uppercase tracking-wide text-gray-900">
               Product
@@ -90,7 +90,7 @@ function Footer() {
             </ul>
           </div>
 
-          {/* Company */}
+        
           <div>
             <h3 className="text-sm font-bold uppercase tracking-wide text-gray-900">
               Company
@@ -126,7 +126,7 @@ function Footer() {
             </ul>
           </div>
 
-          {/* Legal */}
+         
           <div>
             <h3 className="text-sm font-bold uppercase tracking-wide text-gray-900">
               Legal
@@ -155,7 +155,7 @@ function Footer() {
 
         </div>
 
-        {/* Bottom */}
+       
         <div className="mt-16 border-t border-gray-100 pt-7">
           <p className="text-sm text-gray-300">
             © 2026 Dev Stack. All rights reserved.
