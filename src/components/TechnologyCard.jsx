@@ -41,7 +41,7 @@ function TechnologyCard({ technology, onAdd, isAdded }) {
      
       <div className="mt-5 flex items-center justify-between gap-3 border-t border-gray-100 pt-4">
         
-        {/* Rating */}
+        
         <div className="flex items-center gap-1 text-sm font-bold text-gray-700">
           <span className="text-base text-amber-400">★</span>
           {technology.rating}
